@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<body>
+    <%- include("header")%>
+    <h2>登录</h2>
+  <%  if(username){  %>
+
+        <h3>username:<%-username%></h3>
+        <h3>passwrod:<%-password%></h3>
+  <%  }else{   %>
+        <h2>你还没有登陆</h2>
+  <%  }      %>
+
+
+  <%  list.forEach((item,index)=>{      %>
+        <h2><%- item%>---<%- index%></h2>
+
+  <%  })    %>
+</body>
+</html>
